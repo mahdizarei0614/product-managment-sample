@@ -1,0 +1,132 @@
+#side {
+  max-width: 25%;
+  min-width: 20%;
+}
+#container {
+  display: flex;
+  justify-content: space-between;
+}
+app-companies-grid-view {
+  margin: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  flex-grow: 1;
+  align-items: stretch;
+}
+.add-btn {
+  margin-top: 8px;
+  text-align: center;
+  color: white;
+  padding: 12px;
+  border-radius: 1000px;
+  transition: .3s;
+  border: 2px solid white;
+  &:hover {
+    border: 2px solid #4a9eff;
+    background-color: white;
+    color: #4a9eff;
+    cursor: pointer;
+  }
+}
+.add-company-form-container {
+  input {
+    font-size: 17px;
+    border: none;
+    padding: 8px;
+    &:focus {
+      outline: none;
+      border-bottom: 1px solid #4a9eff;
+    }
+  }
+  border: 1px solid #cccccc;
+  border-radius: 25px;
+  padding: 8px;
+  margin-top: 16px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  height: auto;
+  max-height: 1000px;
+}
+#company-type-container {
+  width: 250px;
+  overflow: hidden;
+}
+#add-company-form {
+  label {
+    max-width: 200px;
+    display: flex;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.375em;
+    input {
+      position: absolute;
+      left: -9999px;
+      &:checked {
+        + {
+          span {
+            background-color: rgba(74, 158, 255, 0.16);
+            &:before {
+              box-shadow: inset 0 0 0 0.4375em #4a9eff;
+            }
+          }
+        }
+      }
+    }
+    span {
+      display: flex;
+      align-items: center;
+      padding: 0.375em 0.75em 0.375em 0.375em;
+      border-radius: 99em;
+      transition: 0.3s ease;
+      &:hover {
+        background-color: rgba(74, 158, 255, 0.16);
+      }
+      &:before {
+        display: flex;
+        flex-shrink: 0;
+        content: "";
+        background-color: #fff;
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        margin-right: 0.375em;
+        transition: 0.3s ease;
+        box-shadow: inset 0 0 0 0.125em #4a9eff;
+      }
+    }
+  }
+}
+.height-zero {
+  margin-top: 8px;
+  max-height: 0;
+  padding: 0 8px;
+  border: none;
+  transition: .3s;
+}
+.search-container {
+  margin-top: 8px;
+  padding: 0 12px;
+  border-radius: 1000px;
+  background-color: #cccccc;
+  input {
+    border: #999999;
+    background-color: #cccccc;
+    font-size: 17px;
+    border: none;
+    padding: 8px;
+    max-width: 80%;
+    &:focus {
+      outline: none;
+    }
+  }
+  i {
+    color: #666;
+  }
+}

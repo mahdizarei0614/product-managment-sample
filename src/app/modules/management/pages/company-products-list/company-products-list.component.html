@@ -1,0 +1,33 @@
+<div id="page-container">
+  <app-header title="Products"></app-header>
+  <div id="container" class="container content-wrap">
+    <div id="side">
+      <div id="add-product-form" class="add-product-form-container height-zero">
+        <input id="new-product-name" type="text" placeholder="Product Name..." name="title">
+        <input id="new-product-production-date" type="date" placeholder="Production Date..." name="date">
+        <div id="product-type-container">
+          <label>
+            <input id="new-product-available" type="radio" name="radio" checked/>
+            <span>Available</span>
+          </label>
+          <label>
+            <input id="new-product-unavailable" type="radio" name="radio"/>
+            <span>Unavailable</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="add-btn background-primary" (click)="addNewCompany()">
+        <i class="fas fa-plus"></i>&nbsp;&nbsp;New Product
+      </div>
+      <div class="search-container">
+        <label>
+          <i class="fas fa-search"></i>
+          <input id="search-bar" type="text" placeholder="Search Products..." name="search" (input)="filter()">
+        </label>
+      </div>
+    </div>
+    <app-products-grid-view [products]="filteredProducts"></app-products-grid-view>
+  </div>
+  <app-footer></app-footer>
+</div>

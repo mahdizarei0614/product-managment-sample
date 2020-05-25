@@ -1,0 +1,138 @@
+{
+  "companies": [
+    {
+      "id": 1,
+      "title": "McDonald's",
+      "telephone": "09123456789",
+      "field": "Food Industry",
+      "picture": "assets/images/defaultCompanyPic.png"
+    },
+    {
+      "title": "Bosch",
+      "telephone": "09123698547",
+      "field": "Home Appliances",
+      "picture": "assets/images/defaultCompanyPic.png",
+      "id": 2
+    },
+    {
+      "title": "Apple Inc.",
+      "telephone": "09125478963",
+      "field": "Electronics",
+      "picture": "assets/images/defaultCompanyPic.png",
+      "id": 3
+    },
+    {
+      "title": "Samsung",
+      "telephone": "09123654789",
+      "field": "Electronics",
+      "picture": "assets/images/defaultCompanyPic.png",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "title": "Big Mac",
+      "company_id": 1,
+      "production_date": "2020-05-25",
+      "stock": "Available",
+      "picture": "assets/images/defaultProductPic.png",
+      "id": 1
+    },
+    {
+      "title": "4 Piece Chicken McNuggets",
+      "company_id": 1,
+      "production_date": "2020-05-25",
+      "stock": "Available",
+      "picture": "assets/images/defaultProductPic.png",
+      "id": 2
+    },
+    {
+      "title": "Small World Famous Fries",
+      "company_id": 1,
+      "production_date": "2020-05-25",
+      "stock": "Available",
+      "picture": "assets/images/defaultProductPic.png",
+      "id": 3
+    },
+    {
+      "title": "Sausage, Egg & Cheese McGriddles",
+      "company_id": 1,
+      "production_date": "2020-05-25",
+      "stock": "Unavailable",
+      "picture": "assets/images/defaultProductPic.png",
+      "id": 4
+    },
+    {
+      "title": "Serie | 6 Built-in double ovenStainless steel MBA5785S0B",
+      "company_id": 2,
+      "production_date": "2020-05-19",
+      "stock": "Unavailable",
+      "picture": "assets/images/defaultProductPic.png",
+      "id": 5
+    },
+    {
+      "title": "Serie | 6 Free-standing fridge186 x 60 cm White KSV36AW4PG",
+      "company_id": 2,
+      "production_date": "2020-05-19",
+      "stock": "Available",
+      "picture": "assets/images/defaultProductPic.png",
+      "id": 6
+    },
+    {
+      "title": "Iphone X",
+      "company_id": 3,
+      "production_date": "2020-05-04",
+      "stock": "Available",
+      "picture": "assets/images/defaultProductPic.png",
+      "id": 7
+    },
+    {
+      "title": "Iphone SE",
+      "company_id": 3,
+      "production_date": "2020-05-04",
+      "stock": "Unavailable",
+      "picture": "assets/images/defaultProductPic.png",
+      "id": 8
+    },
+    {
+      "title": "Iphone 3GS",
+      "company_id": 3,
+      "production_date": "2020-05-04",
+      "stock": "Unavailable",
+      "picture": "assets/images/defaultProductPic.png",
+      "id": 9
+    },
+    {
+      "title": "Galaxy S9",
+      "company_id": 4,
+      "production_date": "2020-05-18",
+      "stock": "Available",
+      "picture": "assets/images/defaultProductPic.png",
+      "id": 10
+    },
+    {
+      "title": "J5 Pro",
+      "company_id": 4,
+      "production_date": "2020-05-18",
+      "stock": "Unavailable",
+      "picture": "assets/images/defaultProductPic.png",
+      "id": 11
+    },
+    {
+      "title": "Southwest Grilled Chicken Salad",
+      "company_id": 1,
+      "production_date": "2020-05-12",
+      "stock": "Unavailable",
+      "picture": "assets/images/defaultProductPic.png",
+      "id": 12
+    },
+    {
+      "title": "Egg McMuffin",
+      "company_id": 1,
+      "production_date": "2020-05-12",
+      "stock": "Available",
+      "picture": "assets/images/defaultProductPic.png",
+      "id": 13
+    }
+  ]
+}

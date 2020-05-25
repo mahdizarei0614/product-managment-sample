@@ -1,0 +1,10 @@
+<div class="card" *ngFor="let p of products">
+  <img src="{{p.picture}}">
+  <div class="details">
+    <h3>Name: {{p.title}}</h3>
+    <h5>Prod Date: {{p.production_date}}</h5>
+    <h6>Stock: <span [class.available]="p.stock === 'Available'"
+                     [class.unavailable]="p.stock === 'Unavailable'">{{p.stock}}</span></h6>
+  </div>
+</div>
+

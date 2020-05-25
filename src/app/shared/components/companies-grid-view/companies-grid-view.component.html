@@ -1,0 +1,9 @@
+<div class="card" *ngFor="let c of companies" (click)="companyClick(c.id)">
+  <img src="{{c.picture}}">
+  <div class="details">
+    <h3>Name: {{c.title}}</h3>
+    <h5>Filed: {{c.field}}</h5>
+    <h6>Telephone no: {{c.telephone}}</h6>
+  </div>
+</div>
+

@@ -1,0 +1,37 @@
+<div id="page-container">
+  <app-header title="Companies"></app-header>
+  <div id="container" class="container content-wrap">
+    <div id="side">
+      <div id="add-company-form" class="add-company-form-container height-zero">
+        <input id="new-company-name" type="text" placeholder="Company Name..." name="title">
+        <input id="new-company-tel" type="text" placeholder="Phone Number..." name="tel">
+        <div id="company-type-container">
+          <label>
+            <input id="new-company-food" type="radio" name="radio" checked/>
+            <span>Food Industry</span>
+          </label>
+          <label>
+            <input id="new-company-home" type="radio" name="radio"/>
+            <span>Home Appliances</span>
+          </label>
+          <label>
+            <input id="new-company-electronics" type="radio" name="radio"/>
+            <span>Electronics</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="add-btn background-primary" (click)="addNewCompany()">
+        <i class="fas fa-plus"></i>&nbsp;&nbsp;New Company
+      </div>
+      <div class="search-container">
+        <label>
+          <i class="fas fa-search"></i>
+          <input id="search-bar" type="text" placeholder="Search Companies..." name="search" (input)="filter()">
+        </label>
+      </div>
+    </div>
+    <app-companies-grid-view [companies]="filteredCompanies"></app-companies-grid-view>
+  </div>
+  <app-footer></app-footer>
+</div>

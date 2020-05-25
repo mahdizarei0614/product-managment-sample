@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  max-width: 1920px;
+  margin: auto;
+}
+
+.content-wrap {
+  padding-bottom: 5rem;    /* Footer height */
+}
+
+.background-primary {
+  background-color: #4a9eff;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
