@@ -8,4 +8,4 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 To set up the fake server navigate to: `src/app/core/mocks/` 
 
-Then and run command: `json-server --watch db.json`
+Then run command: `json-server --watch db.json`
